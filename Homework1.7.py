@@ -23,6 +23,16 @@ class Mentor:
         else:
             return 'Ошибка'
 
+class Lecturer(Mentor):
+    def __init__(self, name, surname):
+        self.name = name
+        self.surname = surname
+
+class Reviewer(Mentor):
+    def __init__(self, name, surname):
+        self.name = name
+        self.surname = surname
+
 
 best_student = Student('Ruoy', 'Eman', 'your_gender')
 best_student.courses_in_progress += ['Python']
