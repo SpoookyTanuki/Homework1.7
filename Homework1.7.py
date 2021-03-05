@@ -183,3 +183,5 @@ def all_mean_lect(lect_list, course_name):
     
 print(all_mean_lect([cool_lecturer, hot_lecturer], 'OOP'))
 
+print(best_student.student_mean)
+
