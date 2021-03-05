@@ -93,32 +93,17 @@ so_so_student = Student('Petya', 'Pustota', 'your_gender')
 so_so_student.courses_in_progress += ['Python', 'Git']
 so_so_student.finished_courses += ['Intro to coding', 'OOP']
 
-print(best_student)
-print()
-print(so_so_student)
-print()
-
 cool_lecturer = Lecturer('Some', 'Buddy')
 cool_lecturer.courses_attached += ['Python', 'Git', 'Intro to coding', 'OOP']
 
 hot_lecturer = Lecturer('One', 'Girl')
 hot_lecturer.courses_attached += ['Python', 'Git', 'Intro to coding', 'OOP']
 
-print(cool_lecturer)
-print()
-print(hot_lecturer)
-print()
-
 cool_reviewer = Reviewer('No', 'Way')
 cool_reviewer.courses_attached += ['Python', 'Intro to coding', 'Git']
 
 hot_reviewer = Reviewer('Nah', 'Yay')
 hot_reviewer.courses_attached += ['Python', 'OOP']
-
-print(cool_reviewer)
-print()
-print(hot_reviewer)
-print()
  
 cool_reviewer.rate_hw(best_student, 'Python', 10)
 cool_reviewer.rate_hw(best_student, 'Python', 9)
@@ -162,6 +147,21 @@ print(hot_lecturer.lecturer_mean)
 print(cool_lecturer.lecturer_mean < hot_lecturer.lecturer_mean)
 print()
 
+print(best_student)
+print()
+print(so_so_student)
+print()
+
+print(cool_lecturer)
+print()
+print(hot_lecturer)
+print()
+
+print(cool_reviewer)
+print()
+print(hot_reviewer)
+print()
+
 def all_mean_stud(students_list, course_name):
     all_grades = list()
     for student in students_list:
@@ -182,6 +182,4 @@ def all_mean_lect(lect_list, course_name):
     return course_result
     
 print(all_mean_lect([cool_lecturer, hot_lecturer], 'OOP'))
-
-print(best_student.student_mean)
 
